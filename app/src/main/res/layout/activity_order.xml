@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelRequiredActions"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="25sp"
+                android:text="Required Actions"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchVacuuming"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="20sp"
+                android:text="Vacuuming"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchDusting"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Dusting"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchWindowCleaning"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Window cleaning"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchFloorMopping"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Floor Mopping"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchLaundry"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Laundry"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/labelPersonalInformation"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="40sp"
+                android:text="Personal Information"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Name and Surname"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Please enter your name and surname"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/labelAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Adress"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainScrollView" />
+
+            <EditText
+                android:id="@+id/inputAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Please enter your postal address"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/labelDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Date you would like us to come:"
+                android:textSize="16sp" />
+
+            <DatePicker
+                android:id="@+id/inputDate"
+                android:layout_width="match_parent"
+                android:layout_height="435dp"
+                android:layout_margin="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:calendarViewShown="false"
+                android:datePickerMode="calendar"
+                android:startYear="2021" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="92dp"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
